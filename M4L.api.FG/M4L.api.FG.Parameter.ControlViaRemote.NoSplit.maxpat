@@ -99,7 +99,7 @@
 					"bordercolor" : [ 0.917647, 0.94902, 0.054902, 0.0 ],
 					"ignoreclick" : 1,
 					"numoutlets" : 3,
-					"patching_rect" : [ 420.0, 640.0, 100.0, 20.0 ],
+					"patching_rect" : [ 452.0, 640.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"id" : "obj-1",
 					"fontname" : "Arial Bold",
@@ -120,7 +120,7 @@
 					"text" : "t l b",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"patching_rect" : [ 420.0, 596.0, 33.0, 18.0 ],
+					"patching_rect" : [ 452.0, 596.0, 33.0, 18.0 ],
 					"id" : "obj-9",
 					"fontname" : "Arial Bold",
 					"outlettype" : [ "", "bang" ],
@@ -134,7 +134,7 @@
 					"text" : "prepend text",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"patching_rect" : [ 420.0, 616.0, 69.0, 18.0 ],
+					"patching_rect" : [ 452.0, 616.0, 69.0, 18.0 ],
 					"id" : "obj-24",
 					"fontname" : "Arial Bold",
 					"outlettype" : [ "" ],
@@ -149,7 +149,7 @@
 					"text" : "text \" \"",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"patching_rect" : [ 536.0, 616.0, 43.0, 16.0 ],
+					"patching_rect" : [ 568.0, 616.0, 43.0, 16.0 ],
 					"id" : "obj-25",
 					"fontname" : "Arial Bold",
 					"outlettype" : [ "" ],
@@ -161,12 +161,11 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "newobj",
-					"text" : "M4L.api.FG.Parameter.GetParentDeviceName",
-					"linecount" : 2,
+					"text" : "M4L.api.FG.Get.ParentDeviceName",
 					"color" : [ 0.317647, 0.709804, 0.321569, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"patching_rect" : [ 420.0, 564.0, 119.0, 29.0 ],
+					"patching_rect" : [ 452.0, 564.0, 177.0, 18.0 ],
 					"id" : "obj-34",
 					"fontname" : "Arial Bold",
 					"outlettype" : [ "", "" ],
@@ -181,7 +180,7 @@
 					"text" : "prepend path",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"patching_rect" : [ 412.0, 544.0, 73.0, 18.0 ],
+					"patching_rect" : [ 452.0, 544.0, 73.0, 18.0 ],
 					"id" : "obj-48",
 					"fontname" : "Arial Bold",
 					"outlettype" : [ "" ],
@@ -911,12 +910,11 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "newobj",
-					"text" : "M4L.api.FG.Parameter.GetParentDeviceName",
-					"linecount" : 2,
+					"text" : "M4L.api.FG.Get.ParentDeviceName",
 					"color" : [ 0.317647, 0.709804, 0.321569, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"patching_rect" : [ 288.0, 512.0, 119.0, 29.0 ],
+					"patching_rect" : [ 288.0, 512.0, 177.0, 18.0 ],
 					"id" : "obj-74",
 					"fontname" : "Arial Bold",
 					"outlettype" : [ "", "" ],
@@ -1210,18 +1208,53 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"source" : [ "obj-40", 1 ],
-					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-34", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"hidden" : 0,
-					"color" : [ 0.94902, 0.376471, 0.0, 1.0 ],
-					"midpoints" : [ 965.5, 221.0, 978.0, 221.0, 978.0, 196.0, 713.5, 196.0 ]
+					"midpoints" : [  ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-14", 0 ],
-					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-48", 0 ],
+					"destination" : [ "obj-34", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-2", 0 ],
+					"destination" : [ "obj-74", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-74", 0 ],
+					"destination" : [ "obj-44", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-74", 1 ],
+					"destination" : [ "obj-48", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 455.5, 542.0, 461.5, 542.0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-40", 1 ],
+					"destination" : [ "obj-59", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
@@ -1238,10 +1271,20 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-40", 1 ],
-					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-14", 0 ],
+					"destination" : [ "obj-40", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-40", 1 ],
+					"destination" : [ "obj-16", 0 ],
+					"hidden" : 0,
+					"color" : [ 0.94902, 0.376471, 0.0, 1.0 ],
+					"midpoints" : [ 965.5, 221.0, 978.0, 221.0, 978.0, 196.0, 713.5, 196.0 ]
 				}
 
 			}
@@ -1270,51 +1313,6 @@
 					"hidden" : 0,
 					"color" : [ 0.94902, 0.376471, 0.0, 1.0 ],
 					"midpoints" : [ 491.0, 127.0, 684.25, 127.0, 684.25, 37.0, 713.5, 37.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-34", 0 ],
-					"destination" : [ "obj-9", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-48", 0 ],
-					"destination" : [ "obj-34", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-74", 1 ],
-					"destination" : [ "obj-48", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 397.5, 542.0, 421.5, 542.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-74", 0 ],
-					"destination" : [ "obj-44", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-2", 0 ],
-					"destination" : [ "obj-74", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
 				}
 
 			}
@@ -1898,7 +1896,7 @@
 					"source" : [ "obj-25", 0 ],
 					"destination" : [ "obj-1", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 545.5, 636.5, 429.5, 636.5 ]
+					"midpoints" : [ 577.5, 636.5, 461.5, 636.5 ]
 				}
 
 			}
@@ -1907,7 +1905,7 @@
 					"source" : [ "obj-24", 0 ],
 					"destination" : [ "obj-1", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 429.5, 636.5, 429.5, 636.5 ]
+					"midpoints" : [ 461.5, 636.5, 461.5, 636.5 ]
 				}
 
 			}
@@ -1925,7 +1923,7 @@
 					"source" : [ "obj-9", 1 ],
 					"destination" : [ "obj-25", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 443.5, 614.5, 545.5, 614.5 ]
+					"midpoints" : [ 475.5, 614.5, 577.5, 614.5 ]
 				}
 
 			}
@@ -1935,7 +1933,7 @@
 					"destination" : [ "obj-25", 0 ],
 					"hidden" : 0,
 					"color" : [ 0.745098, 0.0, 0.0, 1.0 ],
-					"midpoints" : [ 373.5, 284.5, 545.5, 284.5 ]
+					"midpoints" : [ 373.5, 284.5, 577.5, 284.5 ]
 				}
 
 			}
