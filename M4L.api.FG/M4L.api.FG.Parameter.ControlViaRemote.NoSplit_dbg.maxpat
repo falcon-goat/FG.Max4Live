@@ -338,9 +338,9 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "live.dial",
-					"hint" : "Dial Hint",
-					"annotation" : "Dial Annotation",
-					"varname" : "Controler Value",
+					"hint" : "H: MacroDial",
+					"annotation" : "A: MacroDial",
+					"varname" : "SN MacroDial",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"presentation_rect" : [ 4.0, 32.0, 44.0, 36.0 ],
@@ -357,15 +357,15 @@
 							"parameter_exponent" : 1.0,
 							"parameter_invisible" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_annotation_name" : "Controler",
+							"parameter_annotation_name" : "AN: MacroDial",
 							"parameter_mmax" : 127.0,
 							"parameter_mmin" : 0.0,
 							"parameter_initial" : [ 64.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "live.dialll",
+							"parameter_shortname" : "SN: MacroDial",
 							"parameter_modmax" : 127.0,
-							"parameter_longname" : "Controler Value",
+							"parameter_longname" : "LN: MacroDial",
 							"parameter_modmin" : 0.0,
 							"parameter_linknames" : 0,
 							"parameter_modmode" : 0,
@@ -2063,10 +2063,10 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-32" : [ "LN: MacroDial", "SN: MacroDial", 0 ],
 			"obj-40::obj-13" : [ "live-path-storage", "live-path-storage", 0 ],
 			"obj-8" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-21" : [ "L: Reset Value", "S: Reset Value", 0 ],
-			"obj-32" : [ "Controler Value", "live.dialll", 0 ]
+			"obj-21" : [ "L: Reset Value", "S: Reset Value", 0 ]
 		}
 
 	}
