@@ -161,11 +161,11 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "newobj",
-					"text" : "M4L.api.FG.Get.ParentDeviceName",
+					"text" : "M4L.api.FG.Get.ParentDeviceName_dbg",
 					"color" : [ 0.317647, 0.709804, 0.321569, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"patching_rect" : [ 452.0, 564.0, 177.0, 18.0 ],
+					"patching_rect" : [ 452.0, 564.0, 201.0, 18.0 ],
 					"id" : "obj-34",
 					"fontname" : "Arial Bold",
 					"outlettype" : [ "", "" ],
@@ -910,11 +910,11 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "newobj",
-					"text" : "M4L.api.FG.Get.ParentDeviceName",
+					"text" : "M4L.api.FG.Get.ParentDeviceName_dbg",
 					"color" : [ 0.317647, 0.709804, 0.321569, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"patching_rect" : [ 288.0, 512.0, 177.0, 18.0 ],
+					"patching_rect" : [ 288.0, 512.0, 201.0, 18.0 ],
 					"id" : "obj-74",
 					"fontname" : "Arial Bold",
 					"outlettype" : [ "", "" ],
@@ -1208,15 +1208,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"source" : [ "obj-34", 0 ],
-					"destination" : [ "obj-9", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"source" : [ "obj-48", 0 ],
 					"destination" : [ "obj-34", 0 ],
 					"hidden" : 0,
@@ -1226,10 +1217,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-2", 0 ],
-					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-34", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-74", 1 ],
+					"destination" : [ "obj-48", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 479.5, 542.0, 461.5, 542.0 ]
 				}
 
 			}
@@ -1244,10 +1244,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-74", 1 ],
-					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-2", 0 ],
+					"destination" : [ "obj-74", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 455.5, 542.0, 461.5, 542.0 ]
+					"midpoints" : [  ]
 				}
 
 			}
