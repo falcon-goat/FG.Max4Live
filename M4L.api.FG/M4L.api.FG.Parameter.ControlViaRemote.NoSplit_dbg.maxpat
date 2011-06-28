@@ -21,6 +21,93 @@
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"maxclass" : "live.numbox",
+					"varname" : "live.numbox[1]",
+					"numinlets" : 1,
+					"patching_rect" : [ 4.0, 500.0, 36.0, 15.0 ],
+					"presentation" : 1,
+					"id" : "obj-75",
+					"parameter_enable" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"fontface" : 0,
+					"presentation_rect" : [ 3.0, 66.0, 34.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_exponent" : 1.0,
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 127.0,
+							"parameter_mmin" : 0.0,
+							"parameter_type" : 0,
+							"parameter_initial_enable" : 0,
+							"parameter_shortname" : "ResetValue",
+							"parameter_modmax" : 127.0,
+							"parameter_longname" : "Set Reset Value",
+							"parameter_modmin" : 0.0,
+							"parameter_linknames" : 0,
+							"parameter_modmode" : 0,
+							"parameter_info" : "",
+							"parameter_units" : "",
+							"parameter_order" : 0,
+							"parameter_defer" : 0,
+							"parameter_speedlim" : 1.0,
+							"parameter_invisible" : 0,
+							"parameter_steps" : 0,
+							"parameter_annotation_name" : "AN: Set Reset Value"
+						}
+
+					}
+
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "live.button",
+					"hint" : "H: Reset Value",
+					"annotation" : "A: Reset Value",
+					"varname" : "reset_value[1]",
+					"numinlets" : 1,
+					"patching_rect" : [ 4.0, 448.0, 15.0, 15.0 ],
+					"presentation" : 1,
+					"id" : "obj-32",
+					"parameter_enable" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"transition" : 2,
+					"presentation_rect" : [ 37.0, 68.0, 12.0, 12.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_exponent" : 1.0,
+							"parameter_unitstyle" : 10,
+							"parameter_mmax" : 1.0,
+							"parameter_mmin" : 0.0,
+							"parameter_type" : 2,
+							"parameter_initial_enable" : 0,
+							"parameter_shortname" : "Reset",
+							"parameter_modmax" : 127.0,
+							"parameter_longname" : "Reset Value Button",
+							"parameter_modmin" : 0.0,
+							"parameter_linknames" : 0,
+							"parameter_modmode" : 0,
+							"parameter_info" : "",
+							"parameter_units" : "",
+							"parameter_order" : 0,
+							"parameter_defer" : 0,
+							"parameter_speedlim" : 1.0,
+							"parameter_invisible" : 0,
+							"parameter_steps" : 0,
+							"parameter_annotation_name" : "AN: Reset Value Button"
+						}
+
+					}
+
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"maxclass" : "message",
 					"text" : "teeeeest",
 					"numinlets" : 2,
@@ -323,93 +410,6 @@
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "live.numbox",
-					"varname" : "live.numbox",
-					"numinlets" : 1,
-					"patching_rect" : [ 4.0, 504.0, 36.0, 15.0 ],
-					"presentation" : 1,
-					"id" : "obj-8",
-					"parameter_enable" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"fontface" : 0,
-					"presentation_rect" : [ 3.0, 66.0, 34.0, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_exponent" : 1.0,
-							"parameter_unitstyle" : 0,
-							"parameter_mmax" : 127.0,
-							"parameter_mmin" : 0.0,
-							"parameter_type" : 0,
-							"parameter_initial_enable" : 0,
-							"parameter_shortname" : "ResetValue",
-							"parameter_modmax" : 127.0,
-							"parameter_longname" : "Set Reset Value",
-							"parameter_modmin" : 0.0,
-							"parameter_linknames" : 0,
-							"parameter_modmode" : 0,
-							"parameter_info" : "",
-							"parameter_units" : "",
-							"parameter_order" : 0,
-							"parameter_defer" : 0,
-							"parameter_speedlim" : 1.0,
-							"parameter_invisible" : 0,
-							"parameter_steps" : 0,
-							"parameter_annotation_name" : "AN: Set Reset Value"
-						}
-
-					}
-
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "live.button",
-					"hint" : "H: Reset Value",
-					"annotation" : "A: Reset Value",
-					"varname" : "reset_value",
-					"numinlets" : 1,
-					"patching_rect" : [ 4.0, 484.0, 15.0, 15.0 ],
-					"presentation" : 1,
-					"id" : "obj-21",
-					"parameter_enable" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"transition" : 2,
-					"presentation_rect" : [ 37.0, 68.0, 12.0, 12.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_exponent" : 1.0,
-							"parameter_unitstyle" : 10,
-							"parameter_mmax" : 1.0,
-							"parameter_mmin" : 0.0,
-							"parameter_type" : 2,
-							"parameter_initial_enable" : 0,
-							"parameter_shortname" : "ResetValue",
-							"parameter_modmax" : 127.0,
-							"parameter_longname" : "Reset Value Button",
-							"parameter_modmin" : 0.0,
-							"parameter_linknames" : 0,
-							"parameter_modmode" : 0,
-							"parameter_info" : "",
-							"parameter_units" : "",
-							"parameter_order" : 0,
-							"parameter_defer" : 0,
-							"parameter_speedlim" : 1.0,
-							"parameter_invisible" : 0,
-							"parameter_steps" : 0,
-							"parameter_annotation_name" : "AN: Reset Value Button"
-						}
-
-					}
-
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "M4L.api.SaveLivePath[2]",
 					"text" : "M4L.api.FG.Save.LivePath_dbg",
@@ -544,7 +544,7 @@
 					"maxclass" : "message",
 					"text" : "0",
 					"numinlets" : 2,
-					"patching_rect" : [ 24.0, 484.0, 33.0, 16.0 ],
+					"patching_rect" : [ 24.0, 448.0, 33.0, 16.0 ],
 					"id" : "obj-6",
 					"fontname" : "Arial Bold",
 					"numoutlets" : 1,
@@ -1246,6 +1246,42 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"source" : [ "obj-75", 0 ],
+					"destination" : [ "obj-55", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-32", 0 ],
+					"destination" : [ "obj-75", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-6", 0 ],
+					"destination" : [ "obj-75", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-37", 0 ],
+					"destination" : [ "obj-32", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 13.5, 147.5, 13.0, 147.5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"source" : [ "obj-40", 1 ],
 					"destination" : [ "obj-16", 0 ],
 					"hidden" : 0,
@@ -1274,33 +1310,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-8", 0 ],
-					"destination" : [ "obj-55", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-21", 0 ],
-					"destination" : [ "obj-8", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-6", 0 ],
-					"destination" : [ "obj-8", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"source" : [ "obj-37", 2 ],
 					"destination" : [ "obj-46", 0 ],
 					"hidden" : 0,
@@ -1314,15 +1323,6 @@
 					"destination" : [ "obj-37", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-37", 0 ],
-					"destination" : [ "obj-21", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 13.5, 147.5, 13.0, 147.5 ]
 				}
 
 			}
@@ -2094,8 +2094,8 @@
 		"parameters" : 		{
 			"obj-40::obj-13" : [ "live-path-storage", "live-path-storage", 0 ],
 			"obj-59" : [ "FlexMacro Controler", "FlexMacroControl", 0 ],
-			"obj-21" : [ "Reset Value Button", "ResetValue", 0 ],
-			"obj-8" : [ "Set Reset Value", "ResetValue", 0 ]
+			"obj-32" : [ "Reset Value Button", "Reset", 0 ],
+			"obj-75" : [ "Set Reset Value", "ResetValue", 0 ]
 		}
 
 	}
