@@ -1,10 +1,10 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ -3.0, 44.0, 711.0, 674.0 ],
+		"rect" : [ 570.0, 44.0, 711.0, 674.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
-		"defrect" : [ -3.0, 44.0, 711.0, 674.0 ],
+		"defrect" : [ 570.0, 44.0, 711.0, 674.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -42,7 +42,7 @@
 					"outlettype" : [ "", "", "" ],
 					"id" : "obj-99",
 					"fontname" : "Arial Bold",
-					"patching_rect" : [ 4.0, 540.0, 351.0, 18.0 ],
+					"patching_rect" : [ 4.0, 516.0, 351.0, 18.0 ],
 					"fontsize" : 10.0
 				}
 
@@ -454,7 +454,7 @@
 					"id" : "obj-61",
 					"fontname" : "Arial Bold",
 					"bgcolor2" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
-					"patching_rect" : [ 336.0, 420.0, 35.0, 16.0 ],
+					"patching_rect" : [ 168.0, 420.0, 35.0, 16.0 ],
 					"fontsize" : 10.0
 				}
 
@@ -783,17 +783,8 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"source" : [ "obj-16", 0 ],
-					"destination" : [ "obj-99", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-70", 0 ],
-					"destination" : [ "obj-99", 1 ],
+					"source" : [ "obj-99", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
@@ -802,7 +793,25 @@
 , 			{
 				"patchline" : 				{
 					"source" : [ "obj-61", 0 ],
-					"destination" : [ "obj-99", 2 ],
+					"destination" : [ "obj-99", 1 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-16", 1 ],
+					"destination" : [ "obj-99", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-99", 2 ],
+					"destination" : [ "obj-9", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
@@ -819,8 +828,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-99", 2 ],
-					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-70", 0 ],
+					"destination" : [ "obj-99", 1 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
